@@ -1,14 +1,16 @@
 #include <stdio.h>
 
-int main (){
-
-    //Estrutura de repetição for para simular movimento da torre 5 casas para a direita
+void movimentoTorre (){
+    //Estrutura de repetição for para simular movimento da Torre 5 casas para a direita
 
     for (int i = 1; i <=5; i++) {
         printf("\nTorre movendo para a Direita");
     }
     printf("\n\n");
+}
 
+void movimentoRainha(){
+    
     //Estrutura de repetição do-while para simular movimento da rainha 8 casas para a esquerda
     
     int i=1;
@@ -20,7 +22,10 @@ int main (){
 
     printf("\n\n");
 
+}
 
+void movimentoBispo(){
+    
     //Estrutura de repetição while para simular movimento do bispo 5 casa para cima, direita (diagonal)
     int b = 1;
 
@@ -29,9 +34,12 @@ int main (){
         b++;
     }
     printf("\n\n");
+}
+
+void movimentoCavalo(){
 
     //Estrutura aninhada com for e while para simular o movimento do cavalo
-    for(i=1; i <=2; i++){
+    for(int i=1; i <=2; i++){
         printf("\nCavalo movimentando para cima");
 
         if(i==2){ //nessa estrutura em particular tive que usar o if para que ele não fizesse as duas estruturas ao mesmo tempo, o movimento do cavalo é em "L" sendo duas para cima e uma para o lado, sem o if ele estava atropelando e indo para o segundo laço sem terminar o primeiro, acabava ficando um movimento divergente da peça.
@@ -43,5 +51,15 @@ int main (){
         }
         
     }
+}
+
+int main (){
+    //Chamada das funções
+
+    movimentoTorre();
+    movimentoBispo();
+    movimentoRainha();
+    movimentoCavalo();
+
     return 0;
 }   
