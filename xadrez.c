@@ -40,9 +40,11 @@ void movimentoBispoMelhorado(){
     for(int i = 0; i <=5; i++){
         //movimento vertical, cima
         printf("\nBispo para cima");
+
         for(int b = 0; b<=5; b++){
+            //movimento horizontal, direita
             printf("\nBispo para direita");
-            break;
+            break; //sai do laço
         }
     }
     printf("\n\n");
@@ -66,10 +68,12 @@ void movimentoCavalo(){
 }
 
 void movimentoCavaloMelhorado(){
+    //fica no laço até que i seja menor ou igual a 2 OU c seja menor ou igual a 1
     for(int i = 1, c = 1; i<=2 || c<=1; i++, c++){
         printf("\nCavalo movimentando para cima");
 
         if(i==2){
+            //Quando terminar o laço i será igual a 2, assim que for igual a 2 roda essa linha
             printf("\nCavalo movimentando para a direita");
         }
     }
@@ -77,7 +81,7 @@ void movimentoCavaloMelhorado(){
 
 int main (){
     //Chamada das funções
-    //nivel mestre - recursividade
+    //Recursividade
 
     movimentoTorre();
     movimentoBispoMelhorado();
