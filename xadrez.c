@@ -53,13 +53,24 @@ void movimentoCavalo(){
     }
 }
 
+void movimentoCavaloMelhorado(){
+    for(int i = 1, c = 1; i<=2 || c<=1; i++, c++){
+        printf("\nCavalo movimentando para cima");
+
+        if(i==2){
+            printf("\nCavalo movimentando para a direita");
+        }
+    }
+}
+
 int main (){
     //Chamada das funções
+    //nivel mestre - recursividade
 
     movimentoTorre();
     movimentoBispo();
     movimentoRainha();
-    movimentoCavalo();
+    movimentoCavaloMelhorado();
 
     return 0;
 }   
