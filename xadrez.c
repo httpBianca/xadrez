@@ -1,0 +1,47 @@
+#include <stdio.h>
+
+int main (){
+
+    //Estrutura de repetição for para simular movimento da torre 5 casas para a direita
+
+    for (int i = 1; i <=5; i++) {
+        printf("\nTorre movendo para a Direita");
+    }
+    printf("\n\n");
+
+    //Estrutura de repetição do-while para simular movimento da rainha 8 casas para a esquerda
+    
+    int i=1;
+
+    do{
+        printf("\nRainha movendo para a Esquerda");
+        i++;
+    }while(i <= 8);
+
+    printf("\n\n");
+
+
+    //Estrutura de repetição while para simular movimento do bispo 5 casa para cima, direita (diagonal)
+    int b = 1;
+
+    while(b <= 5){
+        printf("\nBispo movendo para cima, direita");
+        b++;
+    }
+    printf("\n\n");
+
+    //Estrutura aninhada com for e while para simular o movimento do cavalo
+    for(i=1; i <=2; i++){
+        printf("\nCavalo movimentando para cima");
+
+        if(i==2){ //nessa estrutura em particular tive que usar o if para que ele não fizesse as duas estruturas ao mesmo tempo, o movimento do cavalo é em "L" sendo duas para cima e uma para o lado, sem o if ele estava atropelando e indo para o segundo laço sem terminar o primeiro, acabava ficando um movimento divergente da peça.
+            int c = 1;
+            while(c <=1){
+            printf("\nCavalo movimentando para a direita");
+            c++;
+            }
+        }
+        
+    }
+    return 0;
+}   
