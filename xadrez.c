@@ -36,6 +36,18 @@ void movimentoBispo(){
     printf("\n\n");
 }
 
+void movimentoBispoMelhorado(){
+    for(int i = 0; i <=5; i++){
+        //movimento vertical, cima
+        printf("\nBispo para cima");
+        for(int b = 0; b<=5; b++){
+            printf("\nBispo para direita");
+            break;
+        }
+    }
+    printf("\n\n");
+}
+
 void movimentoCavalo(){
 
     //Estrutura aninhada com for e while para simular o movimento do cavalo
@@ -68,7 +80,7 @@ int main (){
     //nivel mestre - recursividade
 
     movimentoTorre();
-    movimentoBispo();
+    movimentoBispoMelhorado();
     movimentoRainha();
     movimentoCavaloMelhorado();
 
